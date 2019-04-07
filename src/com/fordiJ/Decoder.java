@@ -46,13 +46,16 @@ public class Decoder {
 
     public void printDecoded() {
         System.out.println("Your decoded numbers are:");
+        System.out.println(" ");
         for (int i = 0; i < decdata.size(); i++) {
-            System.out.println("#" + (i+1) + ": " + decdata.get(i));
+            System.out.print("#" + (i+1) + ": " + decdata.get(i) + ", ");
         }
         System.out.println(" ");
         System.out.println("Your translated message is:");
+        System.out.println(" ");
+
         for (int i = 0; i < decdata.size(); i++) {
-            System.out.println(Translator.encTranslate(decdata.get(i)));
+            System.out.print(Translator.encTranslate(decdata.get(i)));
         }
     }
 }

@@ -38,7 +38,6 @@ public class Translator {       // this class is just a single method to convert
             case ";": return 30;
 
             default:
-                System.out.println("Invalid character used. Expect errors.");
                 return -1;
         }
     }
@@ -79,8 +78,7 @@ public class Translator {       // this class is just a single method to convert
             case 30: return ";";
 
             default:
-                System.out.println("Invalid character used. Expect errors.");
-                return "ERROR";
+                return "a";
         }
     }
 }

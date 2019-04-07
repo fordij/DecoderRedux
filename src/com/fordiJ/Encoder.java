@@ -45,8 +45,9 @@ public class Encoder {
 
     public void printEncoded() {
         System.out.println("Your encoded numbers are:");
+        System.out.println(" ");
         for (int i = 0; i < encdata.size(); i++) {
-            System.out.println("#" + (i+1) + ": " + encdata.get(i));
+            System.out.print("#" + (i+1) + ": " + encdata.get(i) + ", ");
         }
     }
 }
